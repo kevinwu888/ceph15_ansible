@@ -1,0 +1,153 @@
+  cluster:
+    id:     3bd14737-49fd-4e62-a502-41c8f8a4b1f2
+    health: HEALTH_WARN
+            1 pool(s) do not have an application enabled
+            2 pools have too many placement groups
+            2 slow ops, oldest one blocked for 939078 sec, mon.ceph-1 has slow ops
+ 
+  services:
+    mon: 3 daemons, quorum ceph-1,ceph-2,ceph-3 (age 10d)
+    mgr: ceph-3(active, since 9w), standbys: ceph-1, ceph-2
+    mds: cephfs:1 {0=ceph-2=up:active} 2 up:standby
+    osd: 33 osds: 33 up (since 10d), 33 in (since 3M)
+ 
+  task status:
+    scrub status:
+        mds.ceph-2: idle
+ 
+  data:
+    pools:   4 pools, 2561 pgs
+    objects: 4.26k objects, 2.9 GiB
+    usage:   7.8 TiB used, 54 TiB / 62 TiB avail
+    pgs:     2561 active+clean
+ 
+ID  CLASS  WEIGHT    TYPE NAME        STATUS  REWEIGHT  PRI-AFF
+-1         61.76926  root default                              
+-3         20.58975      host ceph-1                           
+ 0    hdd   1.87180          osd.0        up   1.00000  1.00000
+ 1    hdd   1.87180          osd.1        up   1.00000  1.00000
+ 2    hdd   1.87180          osd.2        up   1.00000  1.00000
+ 3    hdd   1.87180          osd.3        up   1.00000  1.00000
+ 4    hdd   1.87180          osd.4        up   1.00000  1.00000
+ 5    hdd   1.87180          osd.5        up   1.00000  1.00000
+ 6    hdd   1.87180          osd.6        up   1.00000  1.00000
+ 7    hdd   1.87180          osd.7        up   1.00000  1.00000
+ 8    hdd   1.87180          osd.8        up   1.00000  1.00000
+ 9    hdd   1.87180          osd.9        up   1.00000  1.00000
+10    hdd   1.87180          osd.10       up   1.00000  1.00000
+-5         20.58975      host ceph-2                           
+11    hdd   1.87180          osd.11       up   1.00000  1.00000
+12    hdd   1.87180          osd.12       up   1.00000  1.00000
+13    hdd   1.87180          osd.13       up   1.00000  1.00000
+14    hdd   1.87180          osd.14       up   1.00000  1.00000
+15    hdd   1.87180          osd.15       up   1.00000  1.00000
+16    hdd   1.87180          osd.16       up   1.00000  1.00000
+17    hdd   1.87180          osd.17       up   1.00000  1.00000
+18    hdd   1.87180          osd.18       up   1.00000  1.00000
+19    hdd   1.87180          osd.19       up   1.00000  1.00000
+20    hdd   1.87180          osd.20       up   1.00000  1.00000
+21    hdd   1.87180          osd.21       up   1.00000  1.00000
+-7         20.58975      host ceph-3                           
+22    hdd   1.87180          osd.22       up   1.00000  1.00000
+23    hdd   1.87180          osd.23       up   1.00000  1.00000
+24    hdd   1.87180          osd.24       up   1.00000  1.00000
+25    hdd   1.87180          osd.25       up   1.00000  1.00000
+26    hdd   1.87180          osd.26       up   1.00000  1.00000
+27    hdd   1.87180          osd.27       up   1.00000  1.00000
+28    hdd   1.87180          osd.28       up   1.00000  1.00000
+29    hdd   1.87180          osd.29       up   1.00000  1.00000
+30    hdd   1.87180          osd.30       up   1.00000  1.00000
+31    hdd   1.87180          osd.31       up   1.00000  1.00000
+32    hdd   1.87180          osd.32       up   1.00000  1.00000
+ID  CLASS  WEIGHT   REWEIGHT  SIZE     RAW USE  DATA     OMAP     META      AVAIL    %USE   VAR   PGS  STATUS
+ 0    hdd  1.87180   1.00000  1.9 TiB  241 GiB  136 MiB   16 KiB  1024 MiB  1.6 TiB  12.58  1.00  233      up
+ 1    hdd  1.87180   1.00000  1.9 TiB  241 GiB  118 MiB   16 KiB  1024 MiB  1.6 TiB  12.58  1.00  235      up
+ 2    hdd  1.87180   1.00000  1.9 TiB  241 GiB  121 MiB   18 KiB  1024 MiB  1.6 TiB  12.58  1.00  246      up
+ 3    hdd  1.87180   1.00000  1.9 TiB  241 GiB  120 MiB   16 KiB  1024 MiB  1.6 TiB  12.58  1.00  227      up
+ 4    hdd  1.87180   1.00000  1.9 TiB  241 GiB  124 MiB   22 KiB  1024 MiB  1.6 TiB  12.58  1.00  229      up
+ 5    hdd  1.87180   1.00000  1.9 TiB  241 GiB  114 MiB   23 KiB  1024 MiB  1.6 TiB  12.58  1.00  242      up
+ 6    hdd  1.87180   1.00000  1.9 TiB  241 GiB  128 MiB   17 KiB  1024 MiB  1.6 TiB  12.58  1.00  209      up
+ 7    hdd  1.87180   1.00000  1.9 TiB  241 GiB  121 MiB  848 KiB  1023 MiB  1.6 TiB  12.58  1.00  242      up
+ 8    hdd  1.87180   1.00000  1.9 TiB  241 GiB  132 MiB   18 KiB  1024 MiB  1.6 TiB  12.58  1.00  252      up
+ 9    hdd  1.87180   1.00000  1.9 TiB  241 GiB  121 MiB   15 KiB  1024 MiB  1.6 TiB  12.58  1.00  235      up
+10    hdd  1.87180   1.00000  1.9 TiB  241 GiB  119 MiB   18 KiB  1024 MiB  1.6 TiB  12.58  1.00  211      up
+11    hdd  1.87180   1.00000  1.9 TiB  241 GiB  117 MiB   21 KiB  1024 MiB  1.6 TiB  12.58  1.00  233      up
+12    hdd  1.87180   1.00000  1.9 TiB  241 GiB  129 MiB   17 KiB  1024 MiB  1.6 TiB  12.58  1.00  230      up
+13    hdd  1.87180   1.00000  1.9 TiB  241 GiB  123 MiB   12 KiB  1024 MiB  1.6 TiB  12.58  1.00  192      up
+14    hdd  1.87180   1.00000  1.9 TiB  241 GiB  123 MiB   16 KiB  1024 MiB  1.6 TiB  12.58  1.00  237      up
+15    hdd  1.87180   1.00000  1.9 TiB  241 GiB  120 MiB   16 KiB  1024 MiB  1.6 TiB  12.58  1.00  238      up
+16    hdd  1.87180   1.00000  1.9 TiB  241 GiB  132 MiB   18 KiB  1024 MiB  1.6 TiB  12.58  1.00  236      up
+17    hdd  1.87180   1.00000  1.9 TiB  241 GiB  146 MiB   24 KiB  1024 MiB  1.6 TiB  12.58  1.00  244      up
+18    hdd  1.87180   1.00000  1.9 TiB  241 GiB  122 MiB   13 KiB  1024 MiB  1.6 TiB  12.58  1.00  252      up
+19    hdd  1.87180   1.00000  1.9 TiB  241 GiB  124 MiB   12 KiB  1024 MiB  1.6 TiB  12.58  1.00  246      up
+20    hdd  1.87180   1.00000  1.9 TiB  241 GiB  111 MiB   13 KiB  1024 MiB  1.6 TiB  12.58  1.00  234      up
+21    hdd  1.87180   1.00000  1.9 TiB  241 GiB  108 MiB  847 KiB  1023 MiB  1.6 TiB  12.58  1.00  219      up
+22    hdd  1.87180   1.00000  1.9 TiB  241 GiB  127 MiB   17 KiB  1024 MiB  1.6 TiB  12.58  1.00  209      up
+23    hdd  1.87180   1.00000  1.9 TiB  241 GiB  128 MiB   18 KiB  1024 MiB  1.6 TiB  12.58  1.00  235      up
+24    hdd  1.87180   1.00000  1.9 TiB  241 GiB  134 MiB  868 KiB  1023 MiB  1.6 TiB  12.58  1.00  258      up
+25    hdd  1.87180   1.00000  1.9 TiB  241 GiB  128 MiB   16 KiB  1024 MiB  1.6 TiB  12.58  1.00  232      up
+26    hdd  1.87180   1.00000  1.9 TiB  241 GiB  116 MiB   15 KiB  1024 MiB  1.6 TiB  12.58  1.00  213      up
+27    hdd  1.87180   1.00000  1.9 TiB  241 GiB  119 MiB   18 KiB  1024 MiB  1.6 TiB  12.58  1.00  232      up
+28    hdd  1.87180   1.00000  1.9 TiB  241 GiB  127 MiB   17 KiB  1024 MiB  1.6 TiB  12.58  1.00  227      up
+29    hdd  1.87180   1.00000  1.9 TiB  241 GiB  120 MiB   39 KiB  1024 MiB  1.6 TiB  12.58  1.00  238      up
+30    hdd  1.87180   1.00000  1.9 TiB  241 GiB  117 MiB   12 KiB  1024 MiB  1.6 TiB  12.58  1.00  256      up
+31    hdd  1.87180   1.00000  1.9 TiB  241 GiB  123 MiB   14 KiB  1024 MiB  1.6 TiB  12.58  1.00  243      up
+32    hdd  1.87180   1.00000  1.9 TiB  241 GiB  116 MiB   17 KiB  1024 MiB  1.6 TiB  12.58  1.00  218      up
+                       TOTAL   62 TiB  7.8 TiB  4.0 GiB  3.0 MiB    33 GiB   54 TiB  12.58                   
+MIN/MAX VAR: 1.00/1.00  STDDEV: 0
+pool 4 'cephfs_data' replicated size 3 min_size 1 crush_rule 0 object_hash rjenkins pg_num 1024 pgp_num 1024 autoscale_mode warn last_change 525 flags hashpspool stripe_width 0 application cephfs
+pool 5 'cephfs_metadata' replicated size 3 min_size 1 crush_rule 0 object_hash rjenkins pg_num 1024 pgp_num 1024 autoscale_mode warn last_change 525 flags hashpspool stripe_width 0 pg_autoscale_bias 4 pg_num_min 16 recovery_priority 5 application cephfs
+pool 6 'device_health_metrics' replicated size 3 min_size 2 crush_rule 0 object_hash rjenkins pg_num 1 pgp_num 1 autoscale_mode on last_change 532 flags hashpspool stripe_width 0 pg_num_min 1 application mgr_devicehealth
+pool 8 'rbd' replicated size 3 min_size 2 crush_rule 0 object_hash rjenkins pg_num 512 pgp_num 512 autoscale_mode off last_change 10028 flags hashpspool,selfmanaged_snaps stripe_width 0
+\n
+NAME                                                                                                  MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda                                                                                                     8:0    0   1.7T  0 disk 
+└─ceph--57df2a5b--bb98--4902--9656--61ff620a6ccf-osd--block--0b224c10--e6b6--46a3--b97c--e63604270835 253:0    0   1.7T  0 lvm  
+sdb                                                                                                     8:16   0   1.7T  0 disk 
+└─ceph--e9c2a8f5--b10e--494f--8991--9383f31987c3-osd--block--23402564--412d--40b2--91c5--eb887bbbb098 253:1    0   1.7T  0 lvm  
+sdc                                                                                                     8:32   0   1.7T  0 disk 
+└─ceph--5e8ae0ea--608d--437a--8583--654d711b68e3-osd--block--f83d40b9--29e3--40e3--ac5c--1e3e3e655612 253:2    0   1.7T  0 lvm  
+sdd                                                                                                     8:48   0   1.7T  0 disk 
+└─ceph--842257da--9224--4c29--b84d--6b0e42986423-osd--block--85968572--9cb1--42fd--96f2--7e647ee7ee86 253:3    0   1.7T  0 lvm  
+sde                                                                                                     8:64   0   1.7T  0 disk 
+└─ceph--97b4e7b4--c631--4461--8aab--e10306743bb3-osd--block--b93b8d3e--83a8--45d3--9ec6--ce178115faeb 253:4    0   1.7T  0 lvm  
+sdf                                                                                                     8:80   0   1.7T  0 disk 
+└─ceph--b9236152--88e2--429e--bf74--d32b184462a7-osd--block--36ade973--f3d5--4c4e--b3c1--ab43ac605752 253:5    0   1.7T  0 lvm  
+sdg                                                                                                     8:96   0   1.7T  0 disk 
+└─ceph--cab56488--cc4b--472c--ba12--6a11f280eaba-osd--block--829c566c--2e6f--4e19--9f64--0f969063c51b 253:6    0   1.7T  0 lvm  
+sdh                                                                                                     8:112  0   1.7T  0 disk 
+└─ceph--ba459d76--7468--46ba--a980--0f7b7161e95a-osd--block--36e6979e--758b--4c25--b939--fea22fb04712 253:7    0   1.7T  0 lvm  
+sdi                                                                                                     8:128  0   1.7T  0 disk 
+└─ceph--c651c72b--96c3--4902--b4fd--047471957e4f-osd--block--15ed6ddd--a9ff--4279--9fad--2435e4e99e77 253:8    0   1.7T  0 lvm  
+sdj                                                                                                     8:144  0   1.7T  0 disk 
+└─ceph--ab9e7a3f--9a42--4867--93c9--631866329ba5-osd--block--fcafd31f--5932--413f--984e--26da7f617800 253:9    0   1.7T  0 lvm  
+sdk                                                                                                     8:160  0   1.7T  0 disk 
+└─ceph--582de461--9bfe--4f0d--9c82--ffbc12055251-osd--block--da0b24c4--8148--4da9--be77--9298a375b873 253:10   0   1.7T  0 lvm  
+sdl                                                                                                     8:176  0   1.7T  0 disk 
+sdm                                                                                                     8:192  0 278.5G  0 disk 
+├─sdm1                                                                                                  8:193  0     1G  0 part /boot/efi
+├─sdm2                                                                                                  8:194  0     1G  0 part /boot
+└─sdm3                                                                                                  8:195  0 276.5G  0 part /
+nvme0n1                                                                                               259:0    0   2.9T  0 disk 
+├─nvme0n1p1                                                                                           259:2    0    10G  0 part 
+├─nvme0n1p2                                                                                           259:3    0    10G  0 part 
+├─nvme0n1p3                                                                                           259:6    0    10G  0 part 
+├─nvme0n1p4                                                                                           259:7    0    10G  0 part 
+├─nvme0n1p5                                                                                           259:10   0    10G  0 part 
+├─nvme0n1p6                                                                                           259:11   0    10G  0 part 
+├─nvme0n1p7                                                                                           259:14   0    10G  0 part 
+├─nvme0n1p8                                                                                           259:15   0    10G  0 part 
+├─nvme0n1p9                                                                                           259:18   0    10G  0 part 
+├─nvme0n1p10                                                                                          259:19   0    10G  0 part 
+├─nvme0n1p11                                                                                          259:22   0    10G  0 part 
+├─nvme0n1p12                                                                                          259:23   0   240G  0 part 
+├─nvme0n1p13                                                                                          259:26   0   240G  0 part 
+├─nvme0n1p14                                                                                          259:27   0   240G  0 part 
+├─nvme0n1p15                                                                                          259:30   0   240G  0 part 
+├─nvme0n1p16                                                                                          259:31   0   240G  0 part 
+├─nvme0n1p17                                                                                          259:34   0   240G  0 part 
+├─nvme0n1p18                                                                                          259:35   0   240G  0 part 
+├─nvme0n1p19                                                                                          259:38   0   240G  0 part 
+├─nvme0n1p20                                                                                          259:39   0   240G  0 part 
+├─nvme0n1p21                                                                                          259:42   0   240G  0 part 
+└─nvme0n1p22                                                                                          259:43   0   240G  0 part 

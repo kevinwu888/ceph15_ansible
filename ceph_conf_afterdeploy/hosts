@@ -1,0 +1,7 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.200.201 ceph-1
+192.168.200.202 ceph-2
+192.168.200.203 ceph-3
+192.168.200.207 client207
+192.168.200.217 client217
