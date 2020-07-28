@@ -1,0 +1,5 @@
+[mgr.ceph-2]
+	key = AQBzMJNeAAAAABAAdjAXH1mj1hYUmDZv0bSKUw==
+	caps mds = "allow *"
+	caps mon = "allow profile mgr"
+	caps osd = "allow *"
