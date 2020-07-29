@@ -1,4 +1,5 @@
 #!/bin/sh
+# create disk partion 
 wal_space=10G
 db_space=240G
 hdd_num=11
